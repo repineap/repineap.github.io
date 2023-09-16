@@ -1,0 +1,48 @@
+body {
+    background: #f3f3f3;
+}
+
+.page-container {
+    margin-top: 75px;
+}
+
+.h1 {
+    font-family: Roboto;
+    font-size: 3em;
+}
+
+.button-group {
+    padding: 1vw;
+    text-align: center;
+}
+
+#counterText {
+    color: black;
+    font-family: Roboto;
+    font-size: 10em;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 25%;
+    margin: auto;
+    width: 200px;
+}
+
+#yellowButton {
+    color:white;
+}
+
+#colorBox {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#colorText {
+    text-align: center;
+    color: white;
+}
