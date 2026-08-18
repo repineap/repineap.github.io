@@ -1,0 +1,23 @@
+:root {
+  /* Palette */
+  --bg: #1c1e21;
+  --surface: #26282c;
+  --text: #c9cdd2;
+  --text-bright: #eceef0;
+  --text-dim: #8a9099;
+  --accent: #f0a83c;
+  --accent-deep: #b9741d;
+  --rule: #3a3d42;
+
+  /* Type */
+  --font-serif: 'Source Serif 4 Variable', Georgia, 'Times New Roman', serif;
+  --font-sans:
+    system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Layout */
+  --measure: 42rem;
+  --wide: 900px;
+  --gutter: 1.5rem;
+}
