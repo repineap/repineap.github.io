@@ -293,6 +293,11 @@ a:hover {
   padding: 0.15rem 0.55rem;
 }
 
+/* A word or phrase in the accent colour. Works in markdown and in templates. */
+.accent {
+  color: var(--accent);
+}
+
 /* TODO placeholders should be impossible to miss while the site is a stub. */
 .prose .todo,
 .todo {

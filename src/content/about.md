@@ -4,9 +4,17 @@ title: About
 
 # About
 
-<span class="todo">TODO — write the bio. Two or three paragraphs in your own voice: who you are, what you build, and what you are looking for next. The sections below are filled in from your résumé.</span>
+Software engineer on the data platform team at Betterment. Based in Jersey City, NJ. Beyond that, someone who
+believes that data can solve a good portion of our problems if you try hard enough. The world is in a very transitionary period
+right now, politically and technologically so doing my best to keep track with that and stay smart.
 
-Software engineer on the data team at Betterment. Based in Jersey City, NJ.
+Who knows what the world will be like in 5 years, but I hope to keep becoming more and more educated as time passes. With AI the world
+allows you to stop learning, to stop trying to improve, but that isn't what life is about. I've always believed that giving my all to everything
+is always worth it. You can get through life without trying but you can't really live.
+
+Would love to connect with anyone else that is interested in hockey, data science, programming, traveling, and most importantly greek food.
+
+<div class="accent-deep">TOP OF MIND: </div>
 
 ## Work experience
 
