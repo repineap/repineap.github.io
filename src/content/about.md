@@ -4,36 +4,43 @@ title: About
 
 # About
 
-<span class="todo">TODO — everything on this page is placeholder text. Rewrite it in your own voice.</span>
+<span class="todo">TODO — write the bio. Two or three paragraphs in your own voice: who you are, what you build, and what you are looking for next. The sections below are filled in from your résumé.</span>
 
-Two or three paragraphs of introduction. Who you are, what you build, and the
-kind of problem you like being handed. Write it the way you would say it out
-loud — this page is read by people deciding whether to email you.
-
-A second paragraph for the through-line in your work: the tools you reach for,
-the parts of a system you enjoy owning, and what you are looking for next.
+Software engineer on the data team at Betterment. Based in Jersey City, NJ.
 
 ## Work experience
 
-### <span class="todo">Job title</span> — <span class="todo">Company</span>
+### Associate Software Engineer, Data Team — Betterment Holdings
 
-<div class="meta">Month Year – Month Year · Location</div>
+<div class="meta">September 2025 – Present</div>
 
-- What you owned, and the scale it ran at.
-- One result with a number in it.
-- One thing you built that outlived the ticket.
+- Rebuilt AWS Step Functions orchestrating data movement into the data warehouse.
+- Built a system to export and process Redshift logs for incident remediation.
+- Led a cross-functional project to establish data governance organisation-wide.
+- Led incident recovery efforts in lockstep with staff-plus engineers.
+- Developed data pipelines in a financial system working with major finance providers.
 
-### <span class="todo">Earlier job title</span> — <span class="todo">Company</span>
+### Air Quality Division Computer Science Intern — Colorado Department of Health
 
-<div class="meta">Month Year – Month Year · Location</div>
+<div class="meta">May – August 2024</div>
 
-- Same shape as above. Newest role first.
+- Built a Tableau prototype and reimplemented it in Angular for deployment on the web.
+- Built a Flask RESTful API to store and serve geospatial data.
+
+### Undergraduate Research — Rose-Hulman Institute of Technology
+
+<div class="meta">August 2023 – May 2024</div>
+
+- Used Java and abstract syntax trees to parse and analyse student code.
+- Integrated with the Eclipse IDE over XML to deploy the plugin to students.
+- Investigated applications toward driving development with guardrails.
 
 ## Education
 
-### <span class="todo">School</span>
+### Rose-Hulman Institute of Technology
 
-<div class="meta">Degree · Graduation year</div>
+<div class="meta">B.S. Computer Science, minor in Mathematics · May 2025 · Terre Haute, IN · GPA 3.97</div>
 
-Coursework, honours, or activities worth a line. Delete this paragraph if the
-degree speaks for itself.
+Related coursework: Object-Oriented Software Development, Web Programming, Data
+Structures and Algorithm Analysis, Software Design, Databases, Artificial
+Intelligence, Graph Theory.

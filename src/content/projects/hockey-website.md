@@ -8,15 +8,17 @@ image: hockey-website.svg
 order: 2
 ---
 
-<span class="todo">TODO — replace this body with the real writeup.</span>
+<span class="todo">TODO — write the writeup. The points below are lifted from your résumé; keep, cut or expand them.</span>
 
-The NHL API sends no CORS headers, so every request goes through a Worker that
-proxies it, caches responses in D1, and runs a 9,859-parameter expected-goals
-model in plain TypeScript — small enough that no Python is needed at runtime.
-Finished games are archived as scored shots, so the analysis dataset grows as
-the site is used.
+## The model
 
-## What to cover here
+- First publicly available NHL expected-goals model, built on seven advanced parameters.
+- Custom heatmaps designed to test the model's accuracy in real game situations.
+- Algorithmically compared against real goals to evaluate performance next to retail models.
 
-- Why the model was ported to TypeScript instead of served from Python.
-- What the D1 cache buys, and what it costs.
+## The site
+
+- Documented the official NHL API from limited existing resources and testing.
+- Integrated that API with the data processing needed to resolve its inconsistencies.
+- The Worker proxies every request, caches responses in D1, and runs the model in
+  plain TypeScript, so nothing Python is needed at runtime.

@@ -7,12 +7,12 @@ image: pipsvue.svg
 order: 3
 ---
 
-<span class="todo">TODO — replace this body with the real writeup.</span>
+<span class="todo">TODO — write the writeup. The points below are lifted from your résumé; keep, cut or expand them.</span>
 
-Dominoes are dragged onto a board split into constrained regions — sums,
-inequalities, all-same, all-distinct — and the regions revalidate on every drop.
-The `pips_rust` crate solves the same puzzles, which makes the solver a check on
-the game rules rather than a separate project.
+## Where it stands
+
+- A Rust-based approach to solving the New York Times Pips game.
+- The solver attaches to a Vue frontend, so people can build custom puzzles and compete.
 
 ## What to cover here
 

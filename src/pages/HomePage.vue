@@ -10,9 +10,9 @@ import { links, site } from '../site'
     <hr class="rule divider" />
 
     <p class="intro">
-      <span class="todo">TODO —</span> two or three sentences of introduction. What you build, what
-      you are good at, and what you are looking for. Keep it short; the
-      <RouterLink to="/about">about page</RouterLink> carries the detail.
+        Been writing code since I can remember at this point. This website serves as my trophy case for the
+        things I feel are cool enough to earn their place. Things are always in flux so I hope to have this as
+        my second brain.
     </p>
 
     <nav class="contact meta">

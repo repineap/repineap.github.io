@@ -2,15 +2,10 @@
 
 export const site = {
   name: 'Andrew Repine',
-  /** TODO: replace with your own one-liner. */
-  tagline: 'Software engineer — TODO: your one-line tagline goes here.',
+  tagline: 'Software engineer, data lover, greek food enthusiast, hockey fan.',
   url: 'https://repineap.github.io',
 } as const
 
-/**
- * Split so the address is not a literal `mailto:` string in the shipped HTML.
- * Scrapers that do not run JavaScript see nothing to harvest.
- */
 const emailUser = 'andrewrepine0'
 const emailHost = 'gmail.com'
 
