@@ -14,7 +14,8 @@ is always worth it. You can get through life without trying but you can't really
 
 Would love to connect with anyone else that is interested in hockey, data science, programming, traveling, and most importantly greek food.
 
-<div class="accent-deep">TOP OF MIND: </div>
+### Top of Mind 
+<div class="accent">Deterministic AI | MCPs | Hockey Season</div>
 
 ## Work experience
 
@@ -24,7 +25,7 @@ Would love to connect with anyone else that is interested in hockey, data scienc
 
 - Rebuilt AWS Step Functions orchestrating data movement into the data warehouse.
 - Built a system to export and process Redshift logs for incident remediation.
-- Led a cross-functional project to establish data governance organisation-wide.
+- Led a cross-functional project to establish data governance organization-wide.
 - Led incident recovery efforts in lockstep with staff-plus engineers.
 - Developed data pipelines in a financial system working with major finance providers.
 
