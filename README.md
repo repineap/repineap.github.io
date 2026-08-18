@@ -52,6 +52,8 @@ No index to update. `src/content.ts` globs both directories at build time.
 - Name, tagline and contact links: `src/site.ts`.
 - About page: `src/content/about.md`.
 - Everything still marked `TODO` is placeholder copy waiting on real content.
+- A Markdown link to another site opens in a new tab on its own. Links starting
+  with `/` or `#` stay in this tab.
 
 ## Stack
 

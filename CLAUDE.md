@@ -13,6 +13,9 @@ Andrew Repine's portfolio. A Vue 3 + Vite site on GitHub Pages.
   is the card. The body is the detail page.
 - Card images live in `src/assets/<collection>/`. Frontmatter names the file.
   An unknown or absent name falls back to `src/assets/placeholder.svg`.
+- Links written in Markdown open in a new tab. `markdownItSetup` in
+  `vite.config.ts` adds `target` and `rel`. Site-relative paths (`/about`) and
+  in-page anchors (`#section`) are exempt, because a new tab breaks them.
 - The site is dark only. There is no light theme and no theme toggle.
 - Colours, type and layout come from `src/styles/tokens.css`. Add a token
   before you add a hard-coded colour.
