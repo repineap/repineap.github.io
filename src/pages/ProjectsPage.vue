@@ -8,7 +8,7 @@ import { projects } from '../content'
     <header class="head">
       <h1 class="page-title">Projects</h1>
       <p class="lede">
-        <span class="todo">TODO —</span> one line about the kind of thing you build.
+          Building anything that spikes my interest and feels good to build.
       </p>
     </header>
 
