@@ -37,7 +37,6 @@ defineProps<{ entry: Entry }>()
 }
 
 .thumb {
-  border-radius: 4px;
   border: 1px solid var(--rule);
   transition:
     border-color 0.18s ease,

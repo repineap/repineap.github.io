@@ -110,7 +110,6 @@ const body = computed<Component | null>(() => {
 
 .hero img {
   width: 100%;
-  border-radius: 6px;
   border: 1px solid var(--rule);
 }
 

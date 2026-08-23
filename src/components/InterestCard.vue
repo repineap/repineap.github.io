@@ -8,8 +8,8 @@ defineProps<{ entry: Entry }>()
   <article class="card">
     <div class="frame">
       <img class="thumb" :src="entry.image" :alt="entry.title" loading="lazy" />
-      <!-- Static glass: a fixed diagonal sheen plus an inset highlight ring. -->
-      <div class="glint" aria-hidden="true" />
+      <!-- Bloom: a soft, diffuse light over the photo. Static, no sheen. -->
+      <div class="bloom" aria-hidden="true" />
     </div>
 
     <h2 class="title serif">
@@ -27,54 +27,30 @@ defineProps<{ entry: Entry }>()
   gap: 0.6rem;
 }
 
-/* The frame is the card's chrome: a raised pane the photo sits inside. */
+/* A plain brown frame around the photo. Flat colour, square corners. */
 .frame {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
-  padding: 6px;
-  background: linear-gradient(160deg, var(--frame-lit), var(--frame-mid) 55%, var(--frame-shade));
-  box-shadow:
-    inset 0 0 0 1px rgba(240, 200, 150, 0.1),
-    0 1px 0 0 rgba(255, 226, 186, 0.05),
-    0 12px 28px -18px rgba(0, 0, 0, 0.9);
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+  padding: 8px;
+  background: var(--frame);
+  transition: background-color 0.2s ease;
 }
 
-.thumb {
-  border-radius: 4px;
-}
-
-.glint {
+.bloom {
   position: absolute;
-  inset: 0;
-  border-radius: 8px;
+  inset: 8px;
   pointer-events: none;
-  background: linear-gradient(
-    118deg,
-    rgba(255, 255, 255, 0.14) 0%,
-    rgba(255, 255, 255, 0.05) 14%,
-    transparent 34%,
-    transparent 62%,
-    rgba(240, 168, 60, 0.08) 88%,
-    rgba(240, 168, 60, 0.14) 100%
+  background: radial-gradient(
+    120% 90% at 30% 12%,
+    rgba(255, 233, 200, 0.22),
+    rgba(255, 220, 175, 0.08) 45%,
+    transparent 72%
   );
-  opacity: 0.75;
-  transition: opacity 0.25s ease;
+  transition: opacity 0.2s ease;
 }
 
 .card:hover .frame {
-  transform: translateY(-3px);
-  box-shadow:
-    inset 0 0 0 1px rgba(240, 168, 60, 0.28),
-    0 1px 0 0 rgba(255, 255, 255, 0.06),
-    0 18px 34px -18px rgba(0, 0, 0, 0.95);
-}
-
-.card:hover .glint {
-  opacity: 1;
+  background: var(--frame-lit);
 }
 
 .title {
@@ -107,12 +83,8 @@ defineProps<{ entry: Entry }>()
 
 @media (prefers-reduced-motion: reduce) {
   .frame,
-  .glint {
+  .bloom {
     transition: none;
-  }
-
-  .card:hover .frame {
-    transform: none;
   }
 }
 </style>

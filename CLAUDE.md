@@ -21,8 +21,10 @@ Andrew Repine's portfolio. A Vue 3 + Vite site on GitHub Pages.
   before you add a hard-coded colour.
 - The accent is amber. The palette otherwise matches the heatmap-weekly
   project, which is the design source.
-- Project cards are flat and editorial. Interest cards are framed and glossy.
-  Keep the two treatments distinct.
+- Project cards are flat and editorial. Interest cards sit in a plain brown
+  frame with a soft bloom over the photo. Keep the two treatments distinct.
+- Images are plain rectangles. Do not round the corners of a card image, a
+  hero image or a prose image.
 - Every card image is cropped to 16:9.
 - `src/components/SiteBackground.vue` is the single hook for the page
   background. The wash is static. Do not animate it.

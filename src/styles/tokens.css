@@ -9,10 +9,9 @@
   --accent-deep: #b9741d;
   --rule: #3a3d42;
 
-  /* Interest card frames: warm dark brown, lit from the top left. */
-  --frame-lit: #3d2e1e;
-  --frame-mid: #2c2117;
-  --frame-shade: #221a12;
+  /* Interest card frames: a flat warm brown, one step lighter on hover. */
+  --frame: #33261a;
+  --frame-lit: #443320;
 
   /* Type */
   --font-serif: 'Source Serif 4 Variable', Georgia, 'Times New Roman', serif;

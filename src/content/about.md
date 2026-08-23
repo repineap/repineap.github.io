@@ -12,6 +12,8 @@ Who knows what the world will be like in 5 years, but I hope to keep becoming mo
 allows you to stop learning, to stop trying to improve, but that isn't what life is about. I've always believed that giving my all to everything
 is always worth it. You can get through life without trying but you can't really live.
 
+This website is meant to keep me accountable to keep working towards my goals and on my projects.
+
 Would love to connect with anyone else that is interested in hockey, data science, programming, traveling, and most importantly greek food.
 
 ### Top of Mind 
