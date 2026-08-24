@@ -8,7 +8,7 @@ import { interests } from '../content'
     <header class="head">
       <h1 class="page-title">Interests</h1>
       <p class="lede">
-        <span class="todo">TODO —</span> one line about what you get up to away from a screen.
+          Software isn't everything.
       </p>
     </header>
 

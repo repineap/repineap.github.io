@@ -12,3 +12,8 @@ It is really in those moments where you are drenched in sweat in a foreign count
 reason I always find myself
 
 <PhotoGallery folder="outdoors" />
+
+In nature, you can always find something to serve as a sign to better yourself. It is one of the things I miss most being in NYC if I am being honest.
+There is nothing that can replace the silence, the bugs, the slight uncomfortability, just all of it.
+
+I don't have much to say about nature, but if you want a mental break **go outside**
