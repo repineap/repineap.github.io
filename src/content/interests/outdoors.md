@@ -1,10 +1,14 @@
 ---
 title: Outdoors
-blurb: TODO — the hobby that happens outside. Trails, water, snow, a bike.
-image: outdoors.svg
+blurb: Nature is where I find peace. Hiking, running, exploring.
+image: nature.jpeg
 order: 3
 ---
 
-<span class="todo">TODO — replace this body, the title, and the photo.</span>
+Some of my favorite moments of my life have been hikes I've been on alone. The above is from Hallstatt in Austria (the poor man's Switzerland)
+on the journey up to a salt mine where I would meet a strange friend from Bhutan.
 
-Somewhere you go often and why it is worth the drive.
+It is really in those moments where you are drenched in sweat in a foreign country that you realize the real reason we are all here. For some
+reason I always find myself
+
+<PhotoGallery folder="outdoors" />

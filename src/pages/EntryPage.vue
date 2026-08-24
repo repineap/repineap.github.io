@@ -155,8 +155,15 @@ const body = computed<Component | null>(() => {
   color: var(--accent);
 }
 
-.body :deep(.prose) {
+/* The text column is the measure, but the body itself runs the full width of
+   the page, so a gallery can sit as wide as the hero image above it. Capping
+   the children rather than the wrapper keeps that a per-element decision. */
+.body :deep(.prose > *) {
   max-width: var(--measure);
+}
+
+.body :deep(.prose > .gallery) {
+  max-width: none;
 }
 
 .body :deep(.prose > *:first-child) {

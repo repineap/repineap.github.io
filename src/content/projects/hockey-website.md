@@ -1,5 +1,5 @@
 ---
-title: NHL Game Display
+title: NHL Stat Display
 blurb: Daily NHL scores, an interactive play-by-play visualisation on an ice rink, expected goals, boxscores and rosters — all served by a single Cloudflare Worker.
 tags: [Vue 3, TypeScript, Cloudflare Workers, D1, Keras]
 live: https://hockey-website.greek-food-worker.workers.dev
@@ -28,8 +28,6 @@ with what I can it is fun to see something that at least directionally makes sen
 Calculating time between shots, angle, distance, etc. are all _relatively_ easy from the data the nhl provides. I highlight relatively because
 this data is very dirty. From changing schemas to misrepresented information to human error there are many glaring issues that need to be worked through.
 But, that is part of the fun of developing a model around real data, working with that **data**.
-
-![Bracket Screenshot](../../assets/projects/hockey-website.png)
 
 ## The model
 

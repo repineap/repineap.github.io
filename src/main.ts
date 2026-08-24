@@ -6,6 +6,9 @@ import './styles/tokens.css'
 import './styles/base.css'
 
 import App from './App.vue'
+import PhotoGallery from './components/PhotoGallery.vue'
 import router from './router'
 
-createApp(App).use(router).mount('#app')
+// Markdown bodies compile to components with no imports of their own, so any
+// component a body may use has to be registered globally.
+createApp(App).use(router).component('PhotoGallery', PhotoGallery).mount('#app')
