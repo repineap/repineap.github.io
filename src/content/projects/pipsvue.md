@@ -4,7 +4,7 @@ blurb: A browser implementation of the Pips domino puzzle + a Rust based solver.
 tags: [Vue 3, TypeScript, Rust, Vite, WASM]
 source: https://github.com/repineap/pipsvue
 image: pipsvue.png
-order: 3
+order: 6
 ---
 
 # What is Pips?

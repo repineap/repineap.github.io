@@ -1,6 +1,6 @@
 ---
 title: Priors
-blurb: A weekly blog covering little factoids, base rates, and anything that I find interesting.
+blurb: A weekly blog covering little factoids, priors (ha), and anything that I find interesting.
 tags: [Vue 3, TypeScript, Vite, ECharts, Data Science, Data Analysis]
 source: https://github.com/repineap/priors
 live: https://repineap.github.io/priors/

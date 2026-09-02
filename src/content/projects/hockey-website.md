@@ -1,11 +1,11 @@
 ---
 title: NHL Stat Display
-blurb: Daily NHL scores, an interactive play-by-play visualisation on an ice rink, expected goals, boxscores and rosters — all served by a single Cloudflare Worker.
+blurb: Daily NHL scores, an interactive play-by-play visualisation on an ice rink, expected goals (custom model), boxscores and rosters.
 tags: [Vue 3, TypeScript, Cloudflare Workers, D1, Keras]
 live: https://hockey-website.greek-food-worker.workers.dev
 source: https://github.com/repineap/hockey-website
 image: hockey-website.png
-order: 2
+order: 5
 ---
 
 # The project
