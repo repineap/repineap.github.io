@@ -1,6 +1,6 @@
 ---
 title: Salta
-blurb: A collection of greek restaurants in Manhattan and the surrounding area with tracking and menus.
+blurb: An atlas of webpages stored for easier reading and cli access.
 tags: [Rust, Tauri, Typescript, WASM, Web Extension]
 source: https://github.com/repineap/salta
 image: salta.png
