@@ -1,6 +1,6 @@
 ---
 title: PipsVue
-blurb: A browser implementation of the Pips domino puzzle + a Rust based solver.
+blurb: A browser implementation of the Pips domino puzzle + a Rust-based solver.
 tags: [Vue 3, TypeScript, Rust, Vite, WASM]
 source: https://github.com/repineap/pipsvue
 image: pipsvue.png
@@ -12,13 +12,13 @@ order: 6
 [Pips](https://www.nytimes.com/games/pips) is a New York Times daily game built on constraints... and dominoes.
 The basic idea is that you take a set of dominoes and a set of regions with certain constraints that you must fulfill.
 Complexity comes in from the fact that it isn't trivial to see how to resolve these constraints (as a human). This lack
-of ability on my part led to the want to create my own implementation as a way to learn Vue as well as learn Rust.
+of ability on my part led to the desire to create my own implementation as a way to learn Vue as well as learn Rust.
 
 ## Eventual Goals
 
 - Fully implemented game authoring and sharing platform for Pips games
-- Rust based solver that is able to run in WASM to validate human created puzzles
-- Puzzle solution generator using provided puzzle layout and reverse solver to create non trivial solve
+- Rust-based solver that is able to run in WASM to validate human created puzzles
+- Puzzle solution generator using provided puzzle layout and reverse solver to create a non-trivial solve
 - ELO ranking system, head to head matches, puzzle ranking system
 
 # Project Basics

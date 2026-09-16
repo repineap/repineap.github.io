@@ -5,16 +5,16 @@ title: About
 # About
 
 Software engineer on the data platform team at Betterment. Based in Jersey City, NJ. Beyond that, someone who
-believes that data can solve a good portion of our problems if you try hard enough. The world is in a very transitionary period
-right now, politically and technologically so doing my best to keep track with that and stay smart.
+believes that data can solve a good portion of our problems if you try hard enough. The world is in a very transitional period
+right now, politically and technologically, so I am doing my best to keep up with that and stay smart.
 
-Who knows what the world will be like in 5 years, but I hope to keep becoming more and more educated as time passes. With AI the world
+Who knows what the world will be like in 5 years, but I hope to keep becoming more and more educated as time passes. With AI, the world
 allows you to stop learning, to stop trying to improve, but that isn't what life is about. I've always believed that giving my all to everything
-is always worth it. You can get through life without trying but you can't really live.
+is always worth it. You can get through life without trying, but you can't really live.
 
 This website is meant to keep me accountable to keep working towards my goals and on my projects.
 
-Would love to connect with anyone else that is interested in hockey, data science, programming, traveling, and most importantly greek food.
+Would love to connect with anyone else who is interested in hockey, data science, programming, traveling, and most importantly Greek food.
 
 ### Top of Mind 
 <div class="accent">Deterministic AI | MCPs | Hockey Season</div>
