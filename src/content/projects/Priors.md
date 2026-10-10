@@ -26,7 +26,7 @@ and learning captured through a few small facts and base rate takeaways.
 To make this easy the system is built on increasingly specific pieces of
 "priors" infrastructure.
 - **Categories** hold sets of facts
-- **Facts** serve as the building blocks of the blogs
+- **Facts** serve as the building blocks of the posts
 - **Posts** store the context and reasons why someone should care about a fact
 - **Priors** store derived, fact-based values that help contextualize the world
 - **Compendium** serves the collection of facts that have been used in posts

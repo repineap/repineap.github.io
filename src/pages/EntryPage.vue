@@ -23,7 +23,7 @@ const body = computed<Component | null>(() => {
 <template>
   <article v-if="entry" class="entry">
     <header class="head wide">
-      <RouterLink class="back meta" :to="backTo">← {{ backLabel }}</RouterLink>
+      <RouterLink class="back meta" :to="backTo">&lt; {{ backLabel }}</RouterLink>
       <h1 class="serif">{{ entry.title }}</h1>
       <p v-if="entry.blurb" class="lede">{{ entry.blurb }}</p>
 
@@ -32,8 +32,8 @@ const body = computed<Component | null>(() => {
       </ul>
 
       <div v-if="entry.live || entry.source" class="actions meta">
-        <a v-if="entry.live" :href="entry.live" target="_blank" rel="noopener">Live site ↗</a>
-        <a v-if="entry.source" :href="entry.source" target="_blank" rel="noopener">Source ↗</a>
+        <a v-if="entry.live" :href="entry.live" target="_blank" rel="noopener">Live site</a>
+        <a v-if="entry.source" :href="entry.source" target="_blank" rel="noopener">Source</a>
       </div>
     </header>
 
@@ -47,7 +47,7 @@ const body = computed<Component | null>(() => {
 
     <nav v-if="links.prev || links.next" class="pager wide">
       <RouterLink v-if="links.prev" class="link prev" :to="`${backTo}/${links.prev.slug}`">
-        <span class="arrow">←</span>
+        <span class="arrow">&lt;</span>
         <span class="stack">
           <span class="meta">Previous</span>
           <span class="name">{{ links.prev.title }}</span>
@@ -59,7 +59,7 @@ const body = computed<Component | null>(() => {
           <span class="meta">Next</span>
           <span class="name">{{ links.next.title }}</span>
         </span>
-        <span class="arrow">→</span>
+        <span class="arrow">&gt;</span>
       </RouterLink>
     </nav>
   </article>

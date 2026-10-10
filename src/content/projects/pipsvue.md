@@ -19,7 +19,7 @@ of ability on my part led to the desire to create my own implementation as a way
 - Fully implemented game authoring and sharing platform for Pips games
 - Rust-based solver that is able to run in WASM to validate human created puzzles
 - Puzzle solution generator using provided puzzle layout and reverse solver to create a non-trivial solve
-- ELO ranking system, head to head matches, puzzle ranking system
+- Elo ranking system, head to head matches, puzzle ranking system
 
 # Project Basics
 
@@ -37,7 +37,7 @@ without trying though.
 - Shrunk data structs from 88 bytes -> 32 bytes using `NonZeroU32` types as well as shrinking `Option<T>` types
   - Size is a multiple of the alignment which comes from the largest field
 - Built move pool system instead of creating (and allocating) a new vector of moves at each step
-- Use flamegraph output to see that `alloc` was the major blocker in speed
+- Used flamegraph output to see that `alloc` was the major blocker in speed
 - Used benching to compare changes and see if they were making any improvement
 - Added a transposition table so the solver stops re-exploring board states it has already seen
 

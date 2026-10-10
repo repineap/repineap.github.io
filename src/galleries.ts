@@ -1,7 +1,7 @@
 /**
  * Photo galleries are folders. Drop images in
  * `src/assets/galleries/<name>/` and a markdown body can slide through them
- * with `<PhotoGallery folder="<name>" />` — there is no index to keep in sync
+ * with `<PhotoGallery folder="<name>" />` - there is no index to keep in sync
  * and no per-image frontmatter.
  */
 export interface Slide {
@@ -9,7 +9,7 @@ export interface Slide {
   id: string
   /** Build-hashed URL of the image. */
   src: string
-  /** Alt text derived from the filename: `01-salt-mine.jpg` → "salt mine". */
+  /** Alt text derived from the filename: `01-salt-mine.jpg` -> "salt mine". */
   alt: string
 }
 

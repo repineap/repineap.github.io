@@ -3,10 +3,10 @@ import type { Component } from 'vue'
 /**
  * Projects and interests are both "one markdown file per entry": the
  * frontmatter is the card, the body is the detail page. Adding an entry is
- * adding a file — there is no index to keep in sync.
+ * adding a file - there is no index to keep in sync.
  */
 export interface Entry {
-  /** URL slug — the markdown filename without its extension. */
+  /** URL slug - the markdown filename without its extension. */
   slug: string
   title: string
   /** One or two sentences, shown on the card. */

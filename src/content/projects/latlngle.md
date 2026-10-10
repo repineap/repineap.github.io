@@ -75,7 +75,7 @@ If you pick a random latitude and a random longitude you get way too many points
 bunch up there. To be fair to every square meter you have to sample by area instead, which comes out to taking the arcsine of a
 random number for the latitude.
 
-There is one more catch. The map projection can't draw anything past about 85° north or south, so nothing up there ever rolls.
+There is one more catch. The map projection can't draw anything past about 85 degrees north or south, so nothing up there ever rolls.
 That is 0.37% of the Earth you will simply never visit.
 
 ### What does rare actually mean?

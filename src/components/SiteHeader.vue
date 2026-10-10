@@ -8,9 +8,9 @@ import { site } from '../site'
       <RouterLink class="mark serif" to="/">{{ site.name }}</RouterLink>
       <nav class="nav meta">
         <RouterLink to="/about">About</RouterLink>
-        <span class="dot">·</span>
+        <span class="sep">|</span>
         <RouterLink to="/projects">Projects</RouterLink>
-        <span class="dot">·</span>
+        <span class="sep">|</span>
         <RouterLink to="/interests">Interests</RouterLink>
       </nav>
     </div>
@@ -60,7 +60,7 @@ import { site } from '../site'
   border-bottom-color: transparent;
 }
 
-.dot {
+.sep {
   color: var(--rule);
 }
 

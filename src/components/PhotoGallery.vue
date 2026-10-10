@@ -62,9 +62,9 @@ function onPointerUp(event: PointerEvent) {
 
       <template v-if="slides.length > 1">
         <button class="nav prev" type="button" aria-label="Previous photo" @click="go(-1)">
-          ‹
+          &lt;
         </button>
-        <button class="nav next" type="button" aria-label="Next photo" @click="go(1)">›</button>
+        <button class="nav next" type="button" aria-label="Next photo" @click="go(1)">&gt;</button>
       </template>
     </div>
 
@@ -175,7 +175,7 @@ function onPointerUp(event: PointerEvent) {
   margin-top: 0;
 }
 
-/* Square ticks, not pills — the site rounds nothing. */
+/* Square ticks, not pills - the site rounds nothing. */
 .dots button {
   display: block;
   width: 1.1rem;

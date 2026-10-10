@@ -21,7 +21,7 @@ make preview  # preview the production build
 | Route | What it is |
 | --- | --- |
 | `/` | Masthead: name, tagline, short intro, contact links |
-| `/about` | Bio, work experience, education — `src/content/about.md` |
+| `/about` | Bio, work experience, education - `src/content/about.md` |
 | `/projects` | Card grid; each card opens `/projects/:slug` |
 | `/interests` | Photo grid; each card opens `/interests/:slug` |
 
@@ -38,9 +38,9 @@ make preview  # preview the production build
 title: NHL Game Display
 blurb: One or two sentences, shown on the card.
 tags: [Vue 3, TypeScript]     # optional
-live: https://example.com     # optional — the card links it only if set
-source: https://github.com/…  # optional
-image: hockey-website.svg     # optional — falls back to a placeholder
+live: https://example.com     # optional - the card links it only if set
+source: https://github.com/...  # optional
+image: hockey-website.svg     # optional - falls back to a placeholder
 order: 2                      # ascending; entries without one sort last
 ---
 ```
@@ -58,6 +58,6 @@ No index to update. `src/content.ts` globs both directories at build time.
 ## Stack
 
 - Vue 3 + Vite, TypeScript
-- `unplugin-vue-markdown` — Markdown files are Vue components
+- `unplugin-vue-markdown` - Markdown files are Vue components
 - vue-router, history mode (`dist/404.html` is a copy of `index.html`)
 - Deployed by `.github/workflows/deploy.yml` on push to `main`

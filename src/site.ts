@@ -2,7 +2,7 @@
 
 export const site = {
   name: 'Andrew Repine',
-  tagline: 'Software engineer, data lover, greek food enthusiast, hockey fan.',
+  tagline: 'Software engineer, data lover, Greek food enthusiast, hockey fan.',
   url: 'https://repineap.github.io',
 } as const
 

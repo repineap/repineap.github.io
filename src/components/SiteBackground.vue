@@ -2,8 +2,8 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 
-// The single hook for the page background. It is a static amber wash — no
-// animation, no interactivity — and sits behind everything.
+// The single hook for the page background. It is a static amber wash - no
+// animation, no interactivity - and sits behind everything.
 const route = useRoute()
 const isHome = computed(() => route.name === 'home')
 </script>

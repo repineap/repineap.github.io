@@ -58,7 +58,7 @@ router.afterEach((to) => {
   const title = collection
     ? entryBySlug(collection, slug)?.title
     : (to.meta.title as string | undefined)
-  document.title = title && title !== site.name ? `${title} — ${site.name}` : site.name
+  document.title = title && title !== site.name ? `${title} - ${site.name}` : site.name
 })
 
 export default router

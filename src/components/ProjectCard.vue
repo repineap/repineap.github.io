@@ -21,8 +21,8 @@ defineProps<{ entry: Entry }>()
 
     <!-- Raised above the stretched link so these stay separately clickable. -->
     <div v-if="entry.live || entry.source" class="links meta">
-      <a v-if="entry.live" :href="entry.live" target="_blank" rel="noopener">Live ↗</a>
-      <a v-if="entry.source" :href="entry.source" target="_blank" rel="noopener">Source ↗</a>
+      <a v-if="entry.live" :href="entry.live" target="_blank" rel="noopener">Live</a>
+      <a v-if="entry.source" :href="entry.source" target="_blank" rel="noopener">Source</a>
     </div>
   </article>
 </template>

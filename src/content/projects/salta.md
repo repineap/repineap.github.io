@@ -14,7 +14,7 @@ That is exactly what I am building Salta for. It is meant to be your atlas (salt
 of all of your sources so that you can easily synthesize information together.
 
 It is also meant to transform the way that you interact with agents and the internet. A lot
-of the harnesses have a way to access the html of a web page, but spend a lot of time pulling
+of the harnesses have a way to access the HTML of a web page, but spend a lot of time pulling
 out facts and information which you typically have to go check yourself on the website after
 it gives a link.
 
@@ -33,11 +33,11 @@ that also manages to be quite easy to develop.
 
 ### Web Extension
 
-The tauri app itself is designed in a way where it does not actually talk to or scrape websites itself,
+The Tauri app itself is designed in a way where it does not actually talk to or scrape websites itself,
 but instead you are able to ship whatever page you are currently looking at to the parsing pipeline through
-the salta web extension.
+the Salta web extension.
 
-ctrl + shift + s ships the currently visible page to the app for parsing and categorization, something that
+`Ctrl+Shift+S` ships the currently visible page to the app for parsing and categorization, something that
 is extremely quick and straightforward.
 
 I chose this approach because it allows the user to take web pages that require credentials or human interaction
@@ -47,8 +47,8 @@ appealing benefits.
 
 ### WASM Plugin System
 
-I will talk more about the parsing pipeline, but one of the coolest features I have shipped with Salta is the ability
-to add custom rust -> WASM plugins for parsing specific URLs.
+I will talk more about the parsing pipeline below, but one of the coolest features I have shipped with Salta is the ability
+to add custom Rust -> WASM plugins for parsing specific URLs.
 
 This idea came to me when thinking of how the app should function on something like YouTube. Should it just parse
 what the user sees: comments, recommended video titles, description, and other bloated stuff... or should it show you
@@ -75,7 +75,7 @@ without manual categorization.
 The app also includes advanced searching tools via the interface and CLI to allow you to pinpoint what section of the document holds the answer to your
 question so you can cite that information and be confident in what you are saying.
 
-### What's Next
+## What's Next
 
 Once I get the app in a place to share I want to have people develop plugins against the system and see what falls out. I think the ability to have a mini
 RAG internet stored locally is powerful in the age of AI and I hope to bring back that joy of research by making it easier and faster.

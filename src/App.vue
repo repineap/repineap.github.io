@@ -14,7 +14,7 @@ const year = new Date().getFullYear()
   </main>
   <footer class="site-footer">
     <div class="inner meta">
-      <span>© {{ year }} {{ site.name }}</span>
+      <span>(c) {{ year }} {{ site.name }}</span>
       <nav class="links">
         <a v-for="link in links" :key="link.label" :href="link.href" rel="me noopener">
           {{ link.label }}
