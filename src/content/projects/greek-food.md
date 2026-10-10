@@ -5,7 +5,7 @@ tags: [Vue 3, TypeScript, Google Places API, Cloudflare Workers, D1]
 live: https://greek-food.greek-food-worker.workers.dev/
 source: https://github.com/repineap/greek-food
 image: greek-food.png
-order: 2
+order: 4
 ---
 
 # The project
@@ -39,3 +39,10 @@ you rate them normally with stars, but if a dish is seen to be similar enough to
 a ranked-choice vote to determine your favorite horiatiki.
 3. Stats tracking by neighborhood. This also comes from the fact that the app is serving a smaller niche, but the fact that I am able to see progress bars for each of the 
 neighborhoods and boroughs brings me enormous joy.
+
+## Lately
+
+A few things I have shipped since the first version:
+- A map with filters and live counts, so you can see how many spots match before you commit
+- Sorting by distance on the restaurant list and menu search, for the "I am hungry right now" moments
+- A reworked phone layout with bigger tap targets and a filter sheet

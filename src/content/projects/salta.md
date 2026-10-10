@@ -4,7 +4,7 @@ blurb: An atlas of webpages stored for easier reading and CLI access.
 tags: [Rust, Tauri, TypeScript, WASM, Web Extension]
 source: https://github.com/repineap/salta
 image: salta.png
-order: 4
+order: 6
 ---
 
 # What is it?

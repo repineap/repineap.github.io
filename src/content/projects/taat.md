@@ -4,7 +4,7 @@ blurb: A teaching harness to make learning the goal.
 tags: [TypeScript, LLM Harness, Claude Code SDK, PI-AI, PI-UI]
 source: https://github.com/repineap/taat
 image: taat.svg
-order: 3
+order: 5
 ---
 
 # Get TAAT
@@ -44,7 +44,7 @@ I have found the tool extremely useful for learning many different domains in a 
 
 ## The Programming
 
-Along with wanting to learn generally, custom harnesses are all the rage so this served as a perfect opportunity to venture into that world.
+Along with wanting to learn generally, custom harnesses are everywhere right now so this served as a perfect opportunity to venture into that world.
 
 The PI harness has become all the rage and for good reason, so I decided to build off of the packages that are provided by them for interacting
 with models and generating a TUI.

@@ -4,7 +4,7 @@ blurb: A browser implementation of the Pips domino puzzle + a Rust-based solver.
 tags: [Vue 3, TypeScript, Rust, Vite, WASM]
 source: https://github.com/repineap/pipsvue
 image: pipsvue.png
-order: 6
+order: 8
 ---
 
 # What is Pips?
@@ -39,6 +39,7 @@ without trying though.
 - Built move pool system instead of creating (and allocating) a new vector of moves at each step
 - Use flamegraph output to see that `alloc` was the major blocker in speed
 - Used benching to compare changes and see if they were making any improvement
+- Added a transposition table so the solver stops re-exploring board states it has already seen
 
 I have found that building a solver like this is trivial in concept but quickly increases in complexity as you add
 features and more complicated puzzles.
