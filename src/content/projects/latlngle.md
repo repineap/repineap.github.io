@@ -1,7 +1,7 @@
 ---
 title: latlngle
-blurb: A daily luck game. Drop onto one random point on Earth each day, clear the fog on your globe and find out just how unlikely your landing was.
-tags: [React, TypeScript, Rust, WASM, Cloudflare Workers, MapLibre]
+blurb: A daily luck game. Drop onto one random point on Earth each day.
+tags: [React, TypeScript, Rust, WASM, Cloudflare Workers, R2]
 live: https://latlngle.com
 image: latlngle.png
 order: 1
@@ -9,16 +9,15 @@ order: 1
 
 # What is it?
 
-At work we play a set of daily games as part of our daily bonding, one of those being [globle](https://globle-game.com/).
-The thing is, they all reward some kind of skill. In globle's case that means knowing roughly where countries are and
-being able to estimate distance and direction. I wanted one where skill doesn't matter at all. Pure luck, and the whole
-world is the board, oceans and all.
+At work we play a set of daily games as part of our daily standup, one of those being [globle](https://globle-game.com/).
+These games are all quite fun but just not quite enough dopamine for me, so I wanted to make something that scratches
+that itch.
 
 That is latlngle. Once a day (00:00 UTC for everyone) you press **Drop** and the server picks one random point on Earth
-just for you. Then it tells you what you landed in, what you landed near, and how unlikely that was.
+and you wait and see if you somehow hit the Eiffel Tower.
 
-Given that about 71% of the Earth is water, most days you are landing in the ocean. Roughly 2% of drops land in Antarctica
-and only about 1 in 500 lands somewhere built up. _So if you hit a city, enjoy it._
+Given that about 71% of the Earth is water, most days you are landing in the ocean, but the days you hit land
+are quite the emotional boon.
 
 ## The Game
 
@@ -26,8 +25,7 @@ Every landing earns a stack of badges: the country, the sea, the city, the park,
 happen to be floating over. Underneath that you get ground badges too, things like the elevation, the tectonic plate, the
 age of the rock and the climate.
 
-The odds of a badge are just its area divided by the area of the Earth, and the points are 1 over the odds. Dead simple and
-a little ridiculous. Open ocean is worth basically nothing, while landing inside Vatican City sends your score into the billions.
+The odds of a badge are just its area divided by the area of the Earth, and the points are 1 over the odds.
 
 Around that there is a bunch of stuff to chase:
 - A fog-of-war globe that starts black and reveals real satellite imagery everywhere you land
@@ -40,19 +38,15 @@ Around that there is a bunch of stuff to chase:
 
 ### The Globe
 
-The frontend is React and TypeScript with MapLibre rendering the globe. I went with MapLibre over globe.gl because globe.gl
-can't zoom down to street level, and diving from space into your little hex is the whole point.
+The frontend is React and TypeScript with MapLibre rendering the globe.
 
-The fog is where it gets fun. There is no mask drawn over the map, the imagery loader _is_ the fog. Every tile gets
-checked against the areas you have revealed, and tiles you haven't earned are never even fetched.
-
-Then there is the reveal. The globe spins, the coordinates tick in, the camera dives down onto your point and the badges pop
-in from commonest to rarest before the tier stamp lands. It takes about 19 seconds (you can skip it, but where is the fun in that).
+The reveal is designed to hit that sweet spot between being fast enough to not lose attention, but slow enough
+to really add suspense. The combination of the flashing lights, the spinning globe, the ticking scores, and flashing
+achievements combine to give a real sense of joy when you hit something good.
 
 ### The Worker
 
-The API is a TypeScript Cloudflare Worker. The one rule everything hangs off is that the server picks the point and the client
-never can, so no peeking at tomorrow.
+The API is a TypeScript Cloudflare Worker.
 
 Every player (guests included) gets their own Durable Object with its own SQLite database for their drops, achievements and atlas.
 The one-drop-per-day rule is just a unique constraint inside that object. D1 holds accounts and a slim index of drops, which is
@@ -73,10 +67,10 @@ hands the whole thing to Wasm in a single call.
 
 If you pick a random latitude and a random longitude you get way too many points near the poles, because the lines of longitude
 bunch up there. To be fair to every square meter you have to sample by area instead, which comes out to taking the arcsine of a
-random number for the latitude.
+random number for the latitude. (Archimedes' Hat-Box Theorem I guess, CTRL C + CTRL V did me kind here).
 
 There is one more catch. The map projection can't draw anything past about 85 degrees north or south, so nothing up there ever rolls.
-That is 0.37% of the Earth you will simply never visit.
+That is 0.37% of the Earth no one will ever visit.
 
 ### What does rare actually mean?
 
@@ -86,4 +80,7 @@ the real scorer and sets the cutoffs so 25% of drops are Trash, 55% Common, and 
 ## What's Next
 
 The plan is to keep adding things to chase: seasonal events, groups so you can have a board with your friends, and a couple more
-planets. It is a luck game, so the only strategy I can offer is **show up every day**.
+planets.
+
+Most important however is trying to get people playing the game so I am currently figuring out a marketing platform across many 
+different social media platforms with some moderate success already.

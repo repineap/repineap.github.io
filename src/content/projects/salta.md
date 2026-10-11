@@ -1,6 +1,6 @@
 ---
 title: Salta
-blurb: An atlas of webpages stored for easier reading and CLI access.
+blurb: An atlas of webpages downloaded in simple markdown.
 tags: [Rust, Tauri, TypeScript, WASM, Web Extension]
 source: https://github.com/repineap/salta
 image: salta.png
@@ -9,7 +9,8 @@ order: 6
 
 # What is it?
 
-In the AI era, it feels even more important to force yourself to read the sources and learn.
+In the AI era, it feels even more important to force yourself to read the sources (or at least have an agent read real sources).
+
 That is exactly what I am building Salta for. It is meant to be your atlas (salta <=> atlas)
 of all of your sources so that you can easily synthesize information together.
 
@@ -18,16 +19,14 @@ of the harnesses have a way to access the HTML of a web page, but spend a lot of
 out facts and information which you typically have to go check yourself on the website after
 it gives a link.
 
-Salta changes that: you or your agent easily saves a website, it passes through the parsing pipeline
+Salta changes that: you save a website, it passes through the parsing pipeline
 and you have a clean markdown file that you can cite to each other or easily search.
 
 ## Architecture
 
-There are a few basic building blocks that come together to create a very nice experience.
-
 ### Tauri App
 
-The actual app interface is powered by Tauri, a more modern Rust-based native application system.
+The actual app interface is powered by Tauri, a more modern Rust-based native application system (like an Electron).
 Built out of a simple TypeScript frontend and an extensive Rust backend, it is a very quick application
 that also manages to be quite easy to develop.
 
@@ -41,9 +40,9 @@ the Salta web extension.
 is extremely quick and straightforward.
 
 I chose this approach because it allows the user to take web pages that require credentials or human interaction
-to reach and easily scrape those down. Of course this is a little more manual but the point of the tool is to
-be a hub for research and documentation so moving that from the browser to a native app provides some very
-appealing benefits.
+to reach and easily scrape those down.
+
+This requires a bit more work but provides so nice benefits of getting to chose exactly the page and content that is scraped.
 
 ### WASM Plugin System
 
@@ -62,20 +61,14 @@ parse down to the same markdown that can easily be shared between team members a
 
 ## The Parsing Pipeline
 
-As mentioned above, the parsing takes a few steps that I would love to explain.
-
 Raw HTML in -> HTML parser scrapes what we want (custom or native basic scraper)
 -> Parsed content run against a word embedding model to categorize it ->
 If nothing matches, lands in the inbox for categorization.
 
 When a new document arrives a local embedding model scans it and tries to classify it into one of your predefined categories
-based on certain keywords associated with that category. This serves the flow so that things you want arrive where you want
-without manual categorization.
-
-The app also includes advanced searching tools via the interface and CLI to allow you to pinpoint what section of the document holds the answer to your
-question so you can cite that information and be confident in what you are saying.
+based on certain keywords associated with that category.
 
 ## What's Next
 
-Once I get the app in a place to share I want to have people develop plugins against the system and see what falls out. I think the ability to have a mini
-RAG internet stored locally is powerful in the age of AI and I hope to bring back that joy of research by making it easier and faster.
+I want to use this tool to build a local vector database to power simple RAG on your atlas
+likely powered through an MCP or some kind of CLI.

@@ -1,6 +1,6 @@
 ---
 title: NHL Stat Display
-blurb: Daily NHL scores, an interactive play-by-play visualization on an ice rink, expected goals (custom model), boxscores and rosters.
+blurb: NHL games shown with a custom xGoals model as the backing light.
 tags: [Vue 3, TypeScript, Cloudflare Workers, D1, Keras]
 live: https://hockey-website.greek-food-worker.workers.dev
 source: https://github.com/repineap/hockey-website
@@ -43,9 +43,7 @@ But, that is part of the fun of developing a model around real data, working wit
 
 ## Lately
 
-The archive now holds every shot from 4,426 games across the 2023-24 to 2025-26 seasons, about 378,000 of them. With that much
-data sitting there it felt like a waste to only show tables, so I have been adding things that make the site playable:
-- **xG Sandbox**, a rink you can shoot at. Move over the ice and the model tells you what that shot is worth
-- **Luck tables**, which teams are running hot and which games a team deserved to win and lost
-- **Game excitement ratings**, so the good games get a badge and you can jump into a random great one
-- **Game replay**, press play and the game runs on the rink as it happened
+- **xG Sandbox**: A sandbox to play with my xG model and see what a simulated is "worth"
+- **Luck tables**: A measure of hockey luck
+- **Game excitement ratings**: Measures how interesting the games are in case you missed it live
+- **Game replay**

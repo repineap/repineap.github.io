@@ -9,10 +9,11 @@ order: 8
 
 # What is Pips?
 
-[Pips](https://www.nytimes.com/games/pips) is a New York Times daily game built on constraints... and dominoes.
-The basic idea is that you take a set of dominoes and a set of regions with certain constraints that you must fulfill.
+[Pips](https://www.nytimes.com/games/pips) is a New York Times daily game built on constraints and dominoes.
+
+The idea is that you take a set of dominoes and a set of regions with certain constraints that you must fulfill.
 Complexity comes in from the fact that it isn't trivial to see how to resolve these constraints (as a human). This lack
-of ability on my part led to the desire to create my own implementation as a way to learn Vue as well as learn Rust.
+of ability on my part led to the desire to create my own implementation as a way to learn Vue as well as improve my Rust.
 
 ## Eventual Goals
 
@@ -29,8 +30,8 @@ of ability on my part led to the desire to create my own implementation as a way
 ## Memory is hard
 
 From the internet it would look as if writing one of these solvers is trivially easy. In my experience, however,
-I have found it quite challenging. A lot of this has come down to my lack of ability in Rust. You don't learn
-without trying though.
+I have found it quite challenging. A lot of this has come down to my lack of ability in Rust and not knowing
+how to really optimize memory.
 
 ### Major Changes
 
@@ -40,8 +41,3 @@ without trying though.
 - Used flamegraph output to see that `alloc` was the major blocker in speed
 - Used benching to compare changes and see if they were making any improvement
 - Added a transposition table so the solver stops re-exploring board states it has already seen
-
-I have found that building a solver like this is trivial in concept but quickly increases in complexity as you add
-features and more complicated puzzles.
-
-_Note: This project is currently WIP so things will be updated here as they progress_
