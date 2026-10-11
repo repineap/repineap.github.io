@@ -12,12 +12,12 @@ I recently read _The Signal and the Noise_ by Nate Silver and ran across
 someone online saying that you should know a set of basic facts to orient
 the world around you. 
 
-The name priors comes from Bayesian priors and hoping to give people a better
-prior distribution of many different things.
+The name priors comes from Bayesian priors, and from the hope of giving people a better
+prior distribution for many different things.
 
 The biggest one that has stuck with me and really inspired this project is that
-the circumference of the earth is **~25,000 miles**. I don't know why this really
-stuck with me, but I think how simple it is really contextualizes my world
+the circumference of the earth is **~25,000 miles**. I don't know why it
+stuck, but I think its simplicity contextualizes my world.
 
 That is really what I wanted to capture with this website, the joy of childhood
 and learning captured through a few small facts and base rate takeaways.
@@ -44,4 +44,4 @@ These are created as single markdown files to make it easy for me to generate an
 
 ## What's Next
 
-More posts, on the same weekly cadence (hopefully).
+More posts, on a weekly cadence (hopefully).

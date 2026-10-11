@@ -20,13 +20,13 @@ out facts and information which you typically have to go check yourself on the w
 it gives a link.
 
 Salta changes that: you save a website, it passes through the parsing pipeline
-and you have a clean markdown file that you can cite to each other or easily search.
+and you have a clean markdown file that you can cite or easily search.
 
 ## Architecture
 
 ### Tauri App
 
-The actual app interface is powered by Tauri, a more modern Rust-based native application system (like an Electron).
+The actual app interface is powered by Tauri, a more modern Rust-based native application system (like Electron).
 Built out of a simple TypeScript frontend and an extensive Rust backend, it is a very quick application
 that also manages to be quite easy to develop.
 
@@ -42,7 +42,7 @@ is extremely quick and straightforward.
 I chose this approach because it allows the user to take web pages that require credentials or human interaction
 to reach and easily scrape those down.
 
-This requires a bit more work but provides so nice benefits of getting to chose exactly the page and content that is scraped.
+This takes a bit more work, but you get to choose exactly which page and content are scraped.
 
 ### WASM Plugin System
 
@@ -70,5 +70,5 @@ based on certain keywords associated with that category.
 
 ## What's Next
 
-I want to use this tool to build a local vector database to power simple RAG on your atlas
-likely powered through an MCP or some kind of CLI.
+I want to use this tool to build a local vector database to power simple RAG over your atlas,
+likely exposed through an MCP or some kind of CLI.

@@ -10,7 +10,7 @@ Beyond that, someone who believes that data is the solution to most of our probl
 
 The world is in a very transitional period so I find it important to do what I want and do it as well as I can.
 
-Who knows what the world will be like in 5 years (or maybe in 6 months), but humans will continue to learn and create new things which I hope to be able to contribute to.
+Who knows what the world will be like in 5 years (or maybe in 6 months), but humans will continue to learn and create new things which I hope to contribute to.
 
 As AI has become far more widely used, people have been given the opportunity to stop learning. We are able to offload the mental parts of anything to AI and it takes conscious effort to really fight that.
 
@@ -27,12 +27,12 @@ Would love to connect with anyone else who is interested in hockey, data science
 
 <div class="meta">September 2025 - Present</div>
 
-- Deployed internal MCPs for Airflow and AgentCore runtimes for on call assistance of 20+ engineers.
+- Deployed internal MCPs for Airflow and AgentCore runtimes to assist 20+ on-call engineers.
 - Built and contributed to 4 AWS CDK applications to orchestrate data movement and warehouse analysis.
-- Implemented and communicated a data masking system organization wide on over 30,000 tables.
+- Implemented a data masking system on over 30,000 tables and communicated the change organization-wide.
 - Led a cross-functional project to establish data governance and ownership across 4 engineering teams.
-- Led Airflow stability incident with logs and traces to a 2 week old PR with subtle side effects.
-- Developed data pipelines to integrate data from real financial data providers and CRMs into data models.
+- Led an Airflow stability incident, following logs and traces back to a two-week-old PR with subtle side effects.
+- Developed data pipelines that integrate financial provider and CRM data into data models.
 
 
 ### Air Quality Division Computer Science Intern - Colorado Department of Health

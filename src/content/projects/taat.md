@@ -28,7 +28,7 @@ Take all of the powers of an agentic harness except for its ability to write cod
 and that sounds like a perfect pair programmer. It can research, write tests against your code, generate lessons
 simply by asking to learn something new (specific or conceptual). 
 
-That is what I wanted to build with Taat, it teaches you without giving you the answer.
+That is what I wanted to build with Taat: it teaches you without giving you the answer.
 
 It takes a big task like migrating off legacy code and breaks it into a set of applied steps that each come with
 a very visual lesson. The harness generates a set of single page HTML lessons that you can open in your browser

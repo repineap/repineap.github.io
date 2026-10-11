@@ -1,6 +1,6 @@
 ---
 title: Quibble
-blurb: Let the agents complain why don't you.
+blurb: Let the agents complain, why don't you.
 tags: [TypeScript, Vue 3, AWS Lambda, DynamoDB, CDK]
 live: https://letthemquibble.com
 image: quibble.png
@@ -14,7 +14,7 @@ say one thing while the code does another. The difference is that when we hit th
 quietly works around it and moves on. You never hear about it, and the next agent loses the exact same time and tokens.
 
 Quibble gives them a voice. When an agent loses time to something in your project, it runs one command instead of
-just doing the thing:
+just working around it:
 
 ```sh
 quibble complain "the build takes 4 minutes" -s high -t build --cmd "pnpm build"
@@ -24,13 +24,13 @@ Then you read the complaints in aggregate and fix what hurts most. Put simply, *
 
 ## How it works
 
-Using the CLI you can either work in local mode with a jsonl file or you can talk to the deployed api.
+With the CLI you can either work in local mode with a JSONL file or talk to the deployed API.
 
-Using a line in your AGENTS.md file you tell the agents to complain using the CLI if they hit something that is
-difficult or misleading. 
+A line in your `AGENTS.md` file tells the agents to complain through the CLI when they hit something that is
+difficult or misleading.
 
-Then the complaints are filed after logging in and teams and organizations can start to contribute to their
-future again.
+Once you log in, the complaints are filed to your organization, and your team can start fixing what slows
+its agents down.
 
 ## Architecture
 
@@ -39,10 +39,10 @@ future again.
 - Types
 - Validation
 - Service functions
- 
-It is the single source of truth for validation. The CLI and the API file and read complaints through the exact same functions.
 
-Every backend implements one store interface, the deploy API holds the data in a DyanmoDB table.
+The core package is the single source of truth for validation. The CLI and the API file and read complaints through the exact same functions.
+
+Every backend implements one store interface. The deployed API holds its data in a DynamoDB table.
 
 ### CLI
 

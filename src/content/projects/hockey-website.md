@@ -1,6 +1,6 @@
 ---
 title: NHL Stat Display
-blurb: NHL games shown with a custom xGoals model as the backing light.
+blurb: NHL games seen through a custom xGoals model.
 tags: [Vue 3, TypeScript, Cloudflare Workers, D1, Keras]
 live: https://hockey-website.greek-food-worker.workers.dev
 source: https://github.com/repineap/hockey-website
@@ -43,7 +43,7 @@ But, that is part of the fun of developing a model around real data, working wit
 
 ## Lately
 
-- **xG Sandbox**: A sandbox to play with my xG model and see what a simulated is "worth"
-- **Luck tables**: A measure of hockey luck
-- **Game excitement ratings**: Measures how interesting the games are in case you missed it live
+- **xG Sandbox**: A sandbox to play with my xG model and see what a simulated shot is "worth"
+- **Luck tables**: Real scoring compared with expected scoring
+- **Game excitement ratings**: How interesting each game was, in case you missed it live
 - **Game replay**
