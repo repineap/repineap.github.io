@@ -1,17 +1,15 @@
 :root {
-  /* Palette */
-  --bg: #1c1e21;
-  --surface: #26282c;
-  --text: #c9cdd2;
-  --text-bright: #eceef0;
-  --text-dim: #8a9099;
-  --accent: #f0a83c;
-  --accent-deep: #b9741d;
-  --rule: #3a3d42;
+  /* Palette: warm newsprint and black ink. There is no accent colour. */
+  --paper: #f4f0e6;
+  --shade: #e8e3d6;
+  --ink: #161513;
+  --text: #2e2c28;
+  --text-dim: #6a665d;
+  --rule: #cdc6b6;
 
-  /* Interest card frames: a flat warm brown, one step lighter on hover. */
-  --frame: #33261a;
-  --frame-lit: #443320;
+  /* Every image that is not dithered: one warm tone, slightly faded. The
+     brightness keeps a white from clipping, so it lands near the paper. */
+  --image-tone: grayscale(1) contrast(0.88) brightness(0.96) sepia(0.3);
 
   /* Type */
   --font-serif: 'Source Serif 4 Variable', Georgia, 'Times New Roman', serif;

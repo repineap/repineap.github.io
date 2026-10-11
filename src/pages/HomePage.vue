@@ -1,74 +1,57 @@
 <script setup lang="ts">
-import { links, site } from '../site'
+import EntryCard from '../components/EntryCard.vue'
+import { projects } from '../content'
+import TopOfMind from '../content/top-of-mind.md'
+import { site } from '../site'
 </script>
 
 <template>
-  <section class="masthead measure">
-    <h1 class="serif">{{ site.name }}</h1>
-    <p class="tagline">{{ site.tagline }}</p>
+  <section class="wide">
+    <p class="tagline serif">{{ site.tagline }}</p>
+
+    <div class="now">
+      <h2 class="meta">Top of mind</h2>
+      <TopOfMind />
+    </div>
 
     <hr class="rule divider" />
 
-    <p class="intro">
-        Been writing code since I can remember at this point. This website serves as my trophy case for the
-        things I feel are cool enough to earn their place. Things are always in flux so I hope to have this as
-        my second brain.
-    </p>
-
-    <nav class="contact meta">
-      <a v-for="link in links" :key="link.label" :href="link.href" rel="me noopener">
-        {{ link.label }}
-      </a>
-    </nav>
+    <div v-if="projects.length" class="card-grid">
+      <EntryCard
+        v-for="entry in projects"
+        :key="entry.slug"
+        :entry="entry"
+        collection="projects"
+      />
+    </div>
+    <p v-else class="meta">No projects yet.</p>
   </section>
 </template>
 
 <style scoped>
-.masthead {
-  text-align: center;
-  padding-block: 3rem 2rem;
-}
-
-.masthead h1 {
-  font-size: clamp(2.8rem, 9vw, 4.75rem);
-  font-weight: 600;
-  line-height: 1.02;
-  letter-spacing: -0.03em;
-  color: var(--text-bright);
-}
-
 .tagline {
-  margin-top: 1.1rem;
-  font-family: var(--font-serif);
-  font-size: 1.2rem;
-  font-style: italic;
-  color: var(--text-dim);
+  max-width: var(--measure);
+  font-size: clamp(1.6rem, 4.6vw, 2.25rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.now {
+  margin-top: 2rem;
+}
+
+.now h2 {
+  font-weight: 400;
+}
+
+.now :deep(.prose) {
+  margin-top: 0.25rem;
+  color: var(--ink);
 }
 
 .divider {
-  max-width: 4rem;
-  margin: 2.75rem auto;
-}
-
-.intro {
-  font-size: 1.0625rem;
-  line-height: 1.75;
-}
-
-.contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 2.5rem;
-}
-
-.contact a {
-  color: var(--text-dim);
-  border-bottom: 0;
-}
-
-.contact a:hover {
-  color: var(--accent);
+  margin-block: 2rem 2.5rem;
 }
 </style>

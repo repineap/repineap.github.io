@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import InterestCard from '../components/InterestCard.vue'
+import EntryCard from '../components/EntryCard.vue'
 import { interests } from '../content'
 </script>
 
@@ -13,7 +13,12 @@ import { interests } from '../content'
     </header>
 
     <div v-if="interests.length" class="card-grid">
-      <InterestCard v-for="entry in interests" :key="entry.slug" :entry="entry" />
+      <EntryCard
+        v-for="entry in interests"
+        :key="entry.slug"
+        :entry="entry"
+        collection="interests"
+      />
     </div>
     <p v-else class="meta">Nothing here yet.</p>
   </section>

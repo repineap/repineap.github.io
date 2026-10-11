@@ -18,9 +18,6 @@ This website is meant to keep me accountable to keep working towards my goals an
 
 Would love to connect with anyone else who is interested in hockey, data science, programming, Rust, AI, step functions, and of course most importantly Greek food.
 
-### Top of Mind 
-<div class="accent">Stupider AI? | latlngle and Daily Games | Sam Malinski</div>
-
 ## Work experience
 
 ### Software Engineer, Data Platform - Betterment Holdings

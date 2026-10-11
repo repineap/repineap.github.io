@@ -17,19 +17,15 @@ const router = createRouter({
       component: () => import('./pages/AboutPage.vue'),
       meta: { title: 'About' },
     },
-    {
-      path: '/projects',
-      name: 'projects',
-      component: () => import('./pages/ProjectsPage.vue'),
-      meta: { title: 'Projects' },
-    },
+    // The home page is the project list. Old links to /projects still land.
+    { path: '/projects', redirect: { name: 'home' } },
     {
       path: '/projects/:slug',
       name: 'project',
       component: () => import('./pages/EntryPage.vue'),
       props: { collection: 'projects' },
       beforeEnter: (to) =>
-        entryBySlug('projects', String(to.params.slug)) ? true : { name: 'projects' },
+        entryBySlug('projects', String(to.params.slug)) ? true : { name: 'home' },
     },
     {
       path: '/interests',

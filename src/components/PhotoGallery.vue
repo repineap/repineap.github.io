@@ -93,14 +93,14 @@ function onPointerUp(event: PointerEvent) {
 .frame {
   position: relative;
   aspect-ratio: 16 / 9;
-  background: var(--surface);
+  background: var(--shade);
   border: 1px solid var(--rule);
   overflow: hidden;
   touch-action: pan-y;
 }
 
 .frame:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--ink);
   outline-offset: 2px;
 }
 
@@ -110,6 +110,7 @@ function onPointerUp(event: PointerEvent) {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: var(--image-tone);
   opacity: 0;
   transition: opacity 0.35s ease;
   user-select: none;
@@ -133,12 +134,10 @@ function onPointerUp(event: PointerEvent) {
   cursor: pointer;
   font-size: 1.9rem;
   line-height: 1;
-  color: var(--text-bright);
-  background: linear-gradient(to right, rgba(28, 30, 33, 0.55), transparent);
+  color: var(--paper);
+  background: linear-gradient(to right, rgba(22, 21, 19, 0.55), transparent);
   opacity: 0.65;
-  transition:
-    opacity 0.15s ease,
-    color 0.15s ease;
+  transition: opacity 0.15s ease;
 }
 
 .nav.prev {
@@ -147,13 +146,12 @@ function onPointerUp(event: PointerEvent) {
 
 .nav.next {
   right: 0;
-  background: linear-gradient(to left, rgba(28, 30, 33, 0.55), transparent);
+  background: linear-gradient(to left, rgba(22, 21, 19, 0.55), transparent);
 }
 
 .nav:hover,
 .nav:focus-visible {
   opacity: 1;
-  color: var(--accent);
 }
 
 .bar {
@@ -189,7 +187,7 @@ function onPointerUp(event: PointerEvent) {
 
 .dots button:hover,
 .dots button.on {
-  background: var(--accent);
+  background: var(--ink);
 }
 
 @media (prefers-reduced-motion: reduce) {

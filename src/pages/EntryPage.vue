@@ -11,7 +11,9 @@ const route = useRoute()
 const slug = computed(() => String(route.params.slug))
 const entry = computed(() => entryBySlug(props.collection, slug.value))
 const links = computed(() => adjacent(props.collection, slug.value))
-const backTo = computed(() => `/${props.collection}`)
+const base = computed(() => `/${props.collection}`)
+// The home page is the project list, so a project goes back there.
+const backTo = computed(() => (props.collection === 'projects' ? '/' : base.value))
 const backLabel = computed(() => (props.collection === 'projects' ? 'Projects' : 'Interests'))
 
 const body = computed<Component | null>(() => {
@@ -46,7 +48,7 @@ const body = computed<Component | null>(() => {
     </div>
 
     <nav v-if="links.prev || links.next" class="pager wide">
-      <RouterLink v-if="links.prev" class="link prev" :to="`${backTo}/${links.prev.slug}`">
+      <RouterLink v-if="links.prev" class="link prev" :to="`${base}/${links.prev.slug}`">
         <span class="arrow">&lt;</span>
         <span class="stack">
           <span class="meta">Previous</span>
@@ -54,7 +56,7 @@ const body = computed<Component | null>(() => {
         </span>
       </RouterLink>
       <span v-else />
-      <RouterLink v-if="links.next" class="link next" :to="`${backTo}/${links.next.slug}`">
+      <RouterLink v-if="links.next" class="link next" :to="`${base}/${links.next.slug}`">
         <span class="stack">
           <span class="meta">Next</span>
           <span class="name">{{ links.next.title }}</span>
@@ -73,11 +75,10 @@ const body = computed<Component | null>(() => {
 .back {
   display: inline-block;
   color: var(--text-dim);
-  border-bottom: 0;
 }
 
 .back:hover {
-  color: var(--accent);
+  color: var(--ink);
 }
 
 .head h1 {
@@ -86,7 +87,7 @@ const body = computed<Component | null>(() => {
   font-weight: 600;
   line-height: 1.08;
   letter-spacing: -0.025em;
-  color: var(--text-bright);
+  color: var(--ink);
 }
 
 .head .tags {
@@ -100,10 +101,6 @@ const body = computed<Component | null>(() => {
   margin-top: 1.2rem;
 }
 
-.actions a {
-  color: var(--accent);
-}
-
 .hero {
   margin-bottom: 3rem;
 }
@@ -111,6 +108,7 @@ const body = computed<Component | null>(() => {
 .hero img {
   width: 100%;
   border: 1px solid var(--rule);
+  filter: var(--image-tone);
 }
 
 .pager {
@@ -126,8 +124,7 @@ const body = computed<Component | null>(() => {
   display: flex;
   gap: 0.7rem;
   align-items: baseline;
-  color: var(--text-bright);
-  border-bottom: 0;
+  text-decoration: none;
 }
 
 .link.next {
@@ -142,7 +139,7 @@ const body = computed<Component | null>(() => {
 }
 
 .arrow {
-  color: var(--accent);
+  color: var(--text-dim);
 }
 
 .name {
@@ -152,7 +149,8 @@ const body = computed<Component | null>(() => {
 }
 
 .link:hover .name {
-  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 
 /* The text column is the measure, but the body itself runs the full width of

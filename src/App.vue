@@ -52,10 +52,9 @@ const year = new Date().getFullYear()
 
 .links a {
   color: var(--text-dim);
-  border-bottom: 0;
 }
 
 .links a:hover {
-  color: var(--accent);
+  color: var(--ink);
 }
 </style>

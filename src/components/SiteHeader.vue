@@ -9,8 +9,6 @@ import { site } from '../site'
       <nav class="nav meta">
         <RouterLink to="/about">About</RouterLink>
         <span class="sep">|</span>
-        <RouterLink to="/projects">Projects</RouterLink>
-        <span class="sep">|</span>
         <RouterLink to="/interests">Interests</RouterLink>
       </nav>
     </div>
@@ -18,8 +16,9 @@ import { site } from '../site'
 </template>
 
 <style scoped>
+/* The heavy rule under the header is the one loud line on the page. */
 .site-header {
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 2px solid var(--ink);
 }
 
 .inner {
@@ -36,12 +35,12 @@ import { site } from '../site'
   font-size: 1.05rem;
   font-weight: 600;
   letter-spacing: -0.01em;
-  color: var(--accent);
-  border-bottom: 0;
+  text-decoration: none;
 }
 
 .mark:hover {
-  color: var(--text-bright);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 
 .nav {
@@ -56,8 +55,7 @@ import { site } from '../site'
 
 .nav a:hover,
 .nav a.router-link-active {
-  color: var(--text-bright);
-  border-bottom-color: transparent;
+  color: var(--ink);
 }
 
 .sep {
